@@ -23,11 +23,26 @@ using namespace std;
 //    return true;
 //}
 
-void sumArrays(const double *arr1, const double *arr2, double *sum, int size) {
-    for (int i = 0; i < size; i++) {
-        *sum = *(arr1 + i) + *(arr2 + i);
-        cout << *sum;
+//void sumArrays(const double *arr1, const double *arr2, double *sum, int size) {
+//    for (int i = 0; i < size; i++) {
+//        *(sum + i) = *(arr1 + i) + *(arr2 + i);
+//    }
+//}
+
+//void swap(int *arr1, int *arr2, int size) {
+//    for (int i = 0; i < size; i++) {
+//        swap(*(arr1 + i), *(arr2 + i));
+//    }
+//}
+bool is_in(const int* arr1,const int* arr2, int size1,int size2){
+    const int *p1=arr1;
+    const int *p2=arr2;
+    for ( int i=0;i<size2;i++){
+        for (int j=0;j<size1;j++){
+
+        }
     }
+
 }
 
 int main() {
@@ -78,18 +93,44 @@ int main() {
 //    cout << is_mirrored(a, b, size) << endl;
 
 //Problem 4
-    int size, sum;
-    int array1[size], array2[size];
-    int *arr1, *arr2;
-    *arr1 = array1;
-    *arr2 = array2;
-    for (int i = 0; i < size; i++) {
-        cin >> array1[i];
-    }
-    for (int i = 0; i < size; i++) {
-        cin >> array2[i];
-    }
-    sumArrays(arr1, arr2, sum);
+//    int size;
+//    cin >> size;
+//    double array1[size], array2[size], sum[size];
+//    double *arr1 = array1;
+//    double *arr2 = array2;
+//    double *sum4 = sum;
+//    for (int i = 0; i < size; i++) {
+//        cin >> array1[i];
+//    }
+//    for (int i = 0; i < size; i++) {
+//        cin >> array2[i];
+//    }
+//    sumArrays(arr1, arr2, sum4, size);
+//    for (int i = 0; i < size; i++) {
+//        cout << sum4[i];
+//    }
+//    cout << endl;
+//Problem 5
+//    int size;
+//    cin >> size;
+//    int array1[size], array2[size];
+//    int *arr1 = array1;
+//    int *arr2 = array2;
+//    for (int i = 0; i < size; i++) {
+//        cin >> array1[i];
+//    }
+//    for (int i = 0; i < size; i++) {
+//        cin >> array2[i];
+//    }
+//    swap(arr1, arr2, size);
+//    cout << "Array 1 after swap:" << endl;
+//    for (int i = 0; i < size; i++) {
+//        cout << array1[i] << endl;
+//    }
+//    cout << "Array 2 after swap:" << endl;
+//    for (int i = 0; i < size; i++) {
+//        cout << array2[i] << endl;
+//    }
 
 
     return 0;
